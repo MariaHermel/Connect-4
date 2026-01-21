@@ -84,7 +84,7 @@ function checkWin(rowIndex,collumn){
 function checkDirections (rowIndex, collumn, dr, dc){
     let count = 1;
     count += countCells(rowIndex, collumn, dr, dc);
-    count -= countCells(rowIndex, collumn, -dr,-dc);
+    count += countCells(rowIndex, collumn, -dr,-dc);
     return count >= 4;
 }
 
